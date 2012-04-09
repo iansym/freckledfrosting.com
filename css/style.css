@@ -73,11 +73,29 @@ td { vertical-align: top; }
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
-body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
+body{ 
+	font:16px/26px Helvetica, Helvetica Neue, Arial; 
+	background: lightblue url(../img/page_bg.gif) top left repeat;
+}
 
 .wrapper{
 	width:90%;
-	margin:0 5%;
+	margin:0 5%; 
+}
+
+#content {
+	background: #fffaf0; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1ZjBkYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI3JSIgc3RvcC1jb2xvcj0iI2ZmZmFmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  #f5f0dc 0%, #fffaf0 27%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f0dc), color-stop(27%,#fffaf0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f5f0dc 0%,#fffaf0 27%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f5f0dc 0%,#fffaf0 27%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f5f0dc 0%,#fffaf0 27%); /* IE10+ */
+	background: linear-gradient(top,  #f5f0dc 0%,#fffaf0 27%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f0dc', endColorstr='#fffaf0',GradientType=0 ); /* IE6-8 */
+	clear: both;
+	position: relative;
 }
 
 /* ===================
@@ -99,6 +117,24 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 ::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
 ::selection      { background: #f16529; color: #fff; text-shadow: none; }
 
+#title-header {
+margin-top: 0;
+height: 100px;
+background: #ffffff; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmUxZTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #ffffff 1%, #ffe1e1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#ffe1e1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 1%,#ffe1e1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 1%,#ffe1e1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 1%,#ffe1e1 100%); /* IE10+ */
+background: linear-gradient(top,  #ffffff 1%,#ffe1e1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffe1e1',GradientType=0 ); /* IE6-8 */
+
+}
+#title-header h1 {
+	margin: 0;
+}
 /* ==============
     MOBILE: Menu
    ============== */
@@ -108,12 +144,13 @@ nav a{
 	margin-bottom:10px;
 	padding:15px 0;
 
-	background:#e44d26;
-	color:white;
+	background:#f5efc8;
+	color:#644d38;
 
 	text-align:center;
 	text-decoration:none;
 	font-weight:bold;
+
 }
 
 nav a:hover, nav a:visited{
@@ -129,7 +166,8 @@ nav a:hover{
    ============== */
 
 #main{
-	padding:30px 0;
+	background: #fff url(../img/curvytops.png) 50% 0% repeat-x;
+	padding:30px 0 0;
 }
 
 #main article h1{
@@ -145,6 +183,8 @@ nav a:hover{
 	color:white;
 	padding:20px 0;
 }
+
+#nav-secondary { display: none; }
 
 /* ===============
     ALL: IE Fixes
@@ -176,18 +216,72 @@ nav a:hover{
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
-	
-	nav a{
-		float:left;
-		width:27%;
-		margin:0 1.7%;
-		padding:25px 2%;
-		margin-bottom:0;
+	nav {
+		border-top: 1px solid #eece81;
+		border-bottom: 1px solid #eece81;
+		margin-bottom: 2px;
+		float:right;
+		width:100%;
+		background-color: #f5efc8;
+		dislay: block;
+		position: relative;
 	}
+	nav:before {
+		content: "";
+		width: 33px;
+		height: 50px;
+		position: absolute;
+		left: -33px;
+		background: transparent url(../img/topnav-left.png) top left no-repeat;	
+	}
+	nav:after {
+		content: "";
+		width: 33px;
+		height: 50px;
+		position: absolute;
+		margin-left: -33px;
+		right: -33px;
+		background: transparent url(../img/topnav-right.png) top left no-repeat;	
+	}
+	nav a {
+		float:left;
+		margin:0;
+		padding:0 2%;
+		margin-bottom:0;
+		border-right: 1px solid #eece81;
+		height: 44px;
+		line-height: 44px;
+	} 
 	
-	nav li:first-child a{ margin-left:0;  }
-	nav li:last-child  a{ margin-right:0; }
+	nav li:first-child a { margin-left:150px;  }
+	nav li:last-child  a { margin-right:0; border-right: none;}
 	
+	#nav-secondary { 
+		display: block; 
+		position: absolute; 
+		top: -50px;
+		left: 10px;
+		width: 142px;
+		padding-top: 100px;
+		background: transparent url(../img/tag-top.png) 0 0 no-repeat;
+	}
+
+	#nav-secondary ul {
+		margin: 0;
+		padding: 0;
+		border: 3px solid #fff; border-top: none;
+	}
+	#nav-secondary li {
+		margin: 0;
+		padding: 0;
+		list-style: none;	
+		border-left: 1px solid #ffd9e5; 
+		border-right: 1px solid #ffd9e5;
+		background: #fbf6f1;
+	}
+	#nav-secondary li:last-child {
+		border-bottom: 1px solid #ffd9e5; 
+	}
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
@@ -221,10 +315,7 @@ nav a:hover{
 		float:left;
 	}
 
-	nav{
-		float:right;
-		width:38%;
-	}
+	
 
 /* ============
     WIDE: Main
@@ -241,14 +332,14 @@ nav a:hover{
 	}
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1044px) {
 
 /* ===============
     Maximal Width
    =============== */
 
 	.wrapper{
-		width:1026px; /* 1140px - 10% for margins */
+		width:940px; /* 1044px - 10% for margins */
 		margin:0 auto;
 	}
 }
