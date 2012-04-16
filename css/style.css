@@ -11,8 +11,8 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: pink; color: #fff; text-shadow: none; }
+::selection { background: pink; color: #fff; text-shadow: none; }
 
 a { color: #00e; }
 a:visited { color: #551a8b; }
@@ -127,9 +127,6 @@ body{
 
 #title{ color:white; }
 
-::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
-::selection      { background: #f16529; color: #fff; text-shadow: none; }
-
 #title-header {
 margin-top: 0;
 height: 100px;
@@ -149,14 +146,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #title-header h1 {
 	margin: 0;
 	font: 35px/90px CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
-	text-shadow: 2px 2px 3px pink;
+	text-shadow: 1px 1px 0px #fff, 3px 3px 0px pink;
+	/*#644d38*/
 	color: #CB4C72;
 	text-align: center;
 }
 
 #content h1 {
 	font: 26px/36px CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
-	text-shadow: 2px 2px 3px pink;
+	text-shadow: 1px 1px 0px #fff, 3px 3px 0px pink;
 	color: #CB4C72;
 }
 
@@ -251,8 +249,6 @@ nav a.active {
 
 #content h1 {
 	font: 32px/36px CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
-	text-shadow: 2px 2px 3px pink;
-	color: #CB4C72;
 }
 
 /* ====================
