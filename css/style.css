@@ -111,19 +111,6 @@ body{
 	color: #241A10;
 }
 
-header h1 {
-	font: 50px/80px CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
-	text-shadow: 2px 2px 3px pink;
-	color: #CB4C72;
-	text-align: center;
-}
-
-#content h1 {
-	font-family: CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
-	text-shadow: 2px 2px 3px pink;
-	color: #CB4C72;
-}
-
 /* ===================
     ALL: Orange Theme
    =================== */
@@ -158,9 +145,21 @@ background: linear-gradient(top,  #ffffff 1%,#ffe1e1 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffe1e1',GradientType=0 ); /* IE6-8 */
 
 }
+
 #title-header h1 {
 	margin: 0;
+	font: 35px/90px CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
+	text-shadow: 2px 2px 3px pink;
+	color: #CB4C72;
+	text-align: center;
 }
+
+#content h1 {
+	font: 26px/36px CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
+	text-shadow: 2px 2px 3px pink;
+	color: #CB4C72;
+}
+
 /* ==============
     MOBILE: Menu
    ============== */
@@ -244,6 +243,16 @@ nav a.active {
 
 #content {
 	padding: 10px 40px 10px 180px;
+}
+
+#title-header h1 {
+	font: 45px/90px CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
+}
+
+#content h1 {
+	font: 32px/36px CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
+	text-shadow: 2px 2px 3px pink;
+	color: #CB4C72;
 }
 
 /* ====================
@@ -368,6 +377,9 @@ nav a.active {
 		float:left;
 	}
 
+	#title-header h1 {
+		font: 50px/90px CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
+	}
 	
 
 /* ============
