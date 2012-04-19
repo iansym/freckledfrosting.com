@@ -80,13 +80,43 @@ td { vertical-align: top; }
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'PTSerifRegular';
+    src: url('../fonts/pt-serif/PTF55F-webfont.eot');
+    src: url('../fonts/pt-serif/PTF55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt-serif/PTF55F-webfont.woff') format('woff'),
+         url('../fonts/pt-serif/PTF55F-webfont.ttf') format('truetype'),
+         url('../fonts/pt-serif/PTF55F-webfont.svg#PTSerifRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSansRegular';
+    src: url('../fonts/pt-sans/PTS55F-webfont.eot');
+    src: url('../fonts/pt-sans/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt-sans/PTS55F-webfont.woff') format('woff'),
+         url('../fonts/pt-sans/PTS55F-webfont.ttf') format('truetype'),
+         url('../fonts/pt-sans/PTS55F-webfont.svg#PTSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSansNarrowRegular';
+    src: url('../fonts/pt-sans/PTN57F-webfont.eot');
+    src: url('../fonts/pt-sans/PTN57F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt-sans/PTN57F-webfont.woff') format('woff'),
+         url('../fonts/pt-sans/PTN57F-webfont.ttf') format('truetype'),
+         url('../fonts/pt-sans/PTN57F-webfont.svg#PTSansNarrowRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* ===== Initializr Styles =====================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
 body{ 
-	font:16px/26px Helvetica, Helvetica Neue, Arial; 
+	font:16px/26px PTSansRegular, sans-serif; 
 	background: lightblue url(../img/page_bg.gif) top left repeat;
 }
 
@@ -115,6 +145,7 @@ body{
     ALL: Orange Theme
    =================== */
 
+/*
 #header-container{ border-bottom: 20px solid #e44d26; }
 #footer-container{ border-top:    20px solid #e44d26; }
 #main aside      { border-top:    20px solid #e44d26; }
@@ -124,7 +155,7 @@ body{
 #main aside{
 	background:#f16529;
 }
-
+*/
 #title{ color:white; }
 
 #title-header {
@@ -146,29 +177,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #title-header h1 {
 	margin: 0;
 	font: 35px/90px CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
-	text-shadow: 1px 1px 0px #fff, 3px 3px 0px pink;
+	text-shadow: 
+		1px 1px 0px #fff,
+		3px 3px 1px pink;
 	/*#644d38*/
 	color: #CB4C72;
 	text-align: center;
 }
 
+
 #content h1 {
 	font: 26px/36px CreampuffRegular, Helvetica, Helvetica Neue, Arial; 
-	text-shadow: 1px 1px 0px #fff, 3px 3px 0px pink;
+	text-shadow: 1px 1px 0px #fff, 3px 3px 1px pink;
 	color: #CB4C72;
+}
+
+.menu {	
+	font-family: PTSansNarrowRegular, Helvetica, Helvetica Neue, Arial; 
 }
 
 /* ==============
     MOBILE: Menu
    ============== */
 
-nav a{
+nav a {
 	display:block;
 	margin-bottom:10px;
 	padding:15px 0;
 	background:#f5efc8;
 	color:#241A10;
-	font-size: 13px;
+	font-size: 14px;
 	text-align:center;
 	text-decoration:none;
 	text-transform: uppercase;
@@ -325,8 +363,7 @@ nav a.active {
 		color: #644D38;
 		display: block;
 		text-decoration: none;
-		font-family: Tahoma, Arial;
-		font-size: 13px;
+		font-size: 14px;
 		padding: 0 0 0 20px;
 		background: transparent url('../img/bullet-tag.png') no-repeat 10px 11px;
 		border-top: 1px solid #ffffff;
@@ -358,13 +395,14 @@ nav a.active {
     WIDE: CSS3 Effects
    ==================== */
 
+/*
 	#header-container,
 	#main aside{
 		-webkit-box-shadow:0 5px 10px #aaa;
 		   -moz-box-shadow:0 5px 10px #aaa;
 		        box-shadow:0 5px 10px #aaa;
 	}
-
+*/
 /* ============
     WIDE: Menu
    ============ */
@@ -387,9 +425,15 @@ nav a.active {
 		width:57%;
 	}
 		
-	#main aside{
+	#main aside {
 		float:right;
-		width:28%;
+		padding: 0;
+		/border: 5px solid pink;
+		box-shadow: 0px 5px 15px #777;
+		margin: 5px 0 15px 15px;
+	}
+	#main aside img {
+		border: 3px solid #644D38;
 	}
 }
 
